@@ -1,5 +1,4 @@
 //The following is a code snippet of the sphere exclusion (SE)-based dataset partitioning functionality
-
 // Initialization of range variables
 double rmin = 10000.0; // Minimum distance (initialized to a large value)
 double rmax = 0.0;     // Maximum distance (initialized to 0)
@@ -23,7 +22,7 @@ rfor = 7.0; // Adjusted based on a specific use case
 
 // ******************* CLUSTERING INITIALIZATION *******************
 int i20 = 1128; // Total number of elements
-int clast_l[1128], clast_t[1128], clast_cc[1128];
+int clast_l[5000], clast_t[5000], clast_cc[5000]; // Corrected dimensions
 for (int i1 = 0; i1 < i20; i1++) {
     clast_l[i1] = -1;
     clast_t[i1] = -1;
@@ -63,13 +62,15 @@ clast_l[i20_l++] = j; // Add to sphere centers
 clast_cc[i20_c++] = j; // Add to all clusters
 
 // Initialize cluster center with selected index
+float f_clast[5000]; // Corrected dimension to match initial declaration
 for (int i = 0; i < l1; i++) {
-    f_clast[i] = s_smile[j][i];
+    f_clast[i] = static_cast<float>(s_smile[j][i]); // Ensure compatibility with `float`
 }
 
 // ******************* CLUSTERING LOGIC *******************
 clstt2:
 int i_count = 1; // Count of elements in the current cluster
+int iss[3000];   // Corrected dimension to match initial declaration
 iss[0] = j;      // Initialize the first cluster element
 
 for (int i1 = 0; i1 < i20; i1++) {
@@ -105,6 +106,8 @@ for (int i1 = 0; i1 < i20; i1++) {
 }
 
 // Add cluster elements to the test set
+// The factor 0.963 is determined for each split through grid search to ensure that the test set contains no more than 55 samples.
+int is_test[3000]; // Corrected dimension
 int split_count = static_cast<int>(0.963 * (i_count - 1));
 if ((0.963 * (i_count - 1) - split_count) > 0.5) split_count++;
 
@@ -116,7 +119,7 @@ for (int i = 1; i < split_count; i++) {
 printf("\n____ i20_test = %d", i20_test);
 
 // ******************* LEARNING SET GENERATION *******************
-int is_learning[1128];
+int is_learning[3000]; // Corrected dimension
 int i20_learning = 0;
 for (int i1 = 0; i1 < 1128; i1++) {
     bool is_in_test_or_cluster = false;
@@ -162,3 +165,6 @@ for (int i1 = 0; i1 < 1128 - 1; i1++) {
 for (int i1 = 0; i1 < 1128; i1++) {
     printf("\ni1 = %d, i_sm1 = %d", i1, i_sm1[i1]);
 }
+
+
+
