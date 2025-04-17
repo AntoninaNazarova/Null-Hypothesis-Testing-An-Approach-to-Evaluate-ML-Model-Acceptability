@@ -1,7 +1,7 @@
 Benchmark Datasets & Random- and Kennard-Stone-Based Dataset Partitioning for Training, Test, and Evaluation Sets
 
 
-This repository contains datasets and source codes submitted as part of a JCIM submission. The provided files are associated with the dataset partitioning approaches and the feedforward neural network design used in the study.
+This repository contains datasets and source codes for submitted JCIM paper on "Null Hypothesis Testing: An Approach to Evaluate ML Model Acceptability". The provided files are associated with the dataset partitioning approaches and the feedforward neural network design used in the study.
 
 Contents
 
