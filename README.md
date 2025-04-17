@@ -30,7 +30,7 @@ LC50_smiles_eps.txt
 LC50DM_smiles_eps.txt
 Lipophilicity_smiles_eps.txt
 
-Measured values from Benchmark Datasets and corresponding descriptors:
+4. Measured values from Benchmark Datasets and corresponding descriptors:
 ESOL_s_eps.dat
 ESOL_s_smiles.dat
 
