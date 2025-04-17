@@ -19,41 +19,38 @@ Kennard-Stone_based_LC50_ranking.dat
 Kennard-Stone_based_LC50DM_ranking.dat
 Kennard-Stone_based_Lipophilicity_ranking.dat
 
-
-3. Benchmark Datasets from Molecule.Net and TDC, as well as Supporting Files
-ESOL_smiles_eps.txt
-Caco-2_smiles_eps.txt
-DPP4_smiles_eps.txt
-FreeSolv_smiles_eps.txt
-ICG50_smiles_eps.txt
-LC50_smiles_eps.txt
-LC50DM_smiles_eps.txt
-Lipophilicity_smiles_eps.txt
-
-4. Measured values from Benchmark Datasets and corresponding descriptors:
+3. Benchmark Datasets from Molecule.Net and TDC: Measured values (s_eps) & smiles from Benchmark Datasets and corresponding descriptors (s_smiles):
 ESOL_s_eps.dat
 ESOL_s_smiles.dat
+ESOL_smiles.dat
 
 Caco-2_s_eps.dat
 Caco-2_s_smiles.dat
+Caco-2_smiles.dat
 
 DPP4_s_eps.dat
 DPP4_s_smiles.dat
+DPP4_smiles.dat
 
 FreeSolv_s_eps.dat
 FreeSolv_s_smiles.dat
+FreeSolv_smiles.dat
 
 ICG50_s_eps.dat
 ICG50_s_smiles.dat
+ICG50_smiles.dat
 
 LC50_s_eps.dat
 LC50_s_smiles.dat
+LC50_smiles.dat
 
 LC50DM_s_eps.dat
 LC50DM_s_smiles.dat
+LC50DM_smiles.dat
 
 Lipophilicity_s_eps.dat
 Lipophilicity_s_smiles.dat
+Lipophilicity_smiles.dat
 
 
 A dataset of VLA-SMILES descriptors (with d=4) for ESOL compounds. The VLA-SMILES descriptors were generated using the methodology described in the following publication:
