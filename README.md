@@ -52,6 +52,22 @@ Lipophilicity_s_eps.dat
 Lipophilicity_s_smiles.dat
 Lipophilicity_smiles.dat
 
+Clearance_s_eps.dat
+Clearance_s_smiles.dat
+Clearance_smiles.dat
+
+HalfLife_s_eps.dat
+HalfLife_s_smiles.dat
+HalfLife_smiles.dat
+
+PPBR_s_eps.dat
+PPBR_s_smiles.dat
+PPBR_smiles.dat
+
+LOGD_s_eps.dat
+LOGD_s_smiles.dat
+LOGD_smiles.dat
+
 
 A dataset of VLA-SMILES descriptors (with d=4) for ESOL compounds. The VLA-SMILES descriptors were generated using the methodology described in the following publication:
 Mach. Learn. Knowl. Extr. 2022, 4(3), 715-737.
